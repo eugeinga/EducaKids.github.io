@@ -164,7 +164,7 @@ section {
   grid-area: section;
   font-size:larger;
 }
-.Presupuesto {
+section .Presupuesto {
   background-color:var(--color-14);
   border-radius: 2%;
   border-style: groove;
@@ -175,7 +175,7 @@ section {
   font-size: 14px;
 }
 
-.Presupuesto table{
+section .Presupuesto table{
   text-align: center;
   border: #000000;
   width: 100%;
@@ -185,38 +185,34 @@ section {
   border-spacing: 10px;
 }
 
-.Presupuesto td {
+section .Presupuesto td {
   text-align:justify;
   padding: 0%;
 }
 
-.Presupuesto input[type="number"]{
+section .Presupuesto input[type="number"]{
   width: 50%;
   height: 20px;
   text-align: center;
 }
 
-.Presupuesto tr {
+section .Presupuesto tr {
   padding: 2%;
 }
 
-.Presupuesto h3 {
-
-}
-
-.Presupuesto p {
+section .Presupuesto p {
   text-align: left;
 }
 
-.Presupuesto label{
+section .Presupuesto label{
   font-size: 14px;
 }
 
-.datosCliente{
+section .datosCliente{
   text-align: left;
 }
 
-.datosCliente input{
+section .datosCliente input{
   width: 50%;
   height: 20px;
   text-align: center;
