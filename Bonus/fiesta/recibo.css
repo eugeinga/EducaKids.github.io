@@ -2,6 +2,10 @@
 
 /* Estahoja de Estilo es unicamente para el recibo*/
 
+body{
+  background-color: white;
+}
+
 .recibo {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -9,6 +13,7 @@
     padding: 10px;
     margin: 10px;
     max-width: 700px;
+    background-color: #abddc4;
   }
   
   .recibo h1, .recibo h2 {
@@ -16,7 +21,13 @@
   }
   
   .recibo caption {
-    margin-bottom: 10px;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
+
+  .infor {
+    text-align:right;
   }
   
   .recibo hr {
@@ -38,7 +49,7 @@
   }
   
   .recibo thead th {
-    background-color: #ddd;
+    background-color: #ffffff;
   }
   
   .recibo tbody td:first-child, .recibo tbody th:first-child {
@@ -46,11 +57,12 @@
   }
   
   .recibo tfoot th {
-    background-color: #ddd;
+    background-color: #ffffff;
   }
   
   .recibo tfoot td {
     font-weight: bold;
+    background-color: #ffffff;
   }
   
   .recibo tfoot td:last-child {
@@ -66,3 +78,6 @@
     margin: 0 auto;
   }
   
+  .colorido {
+    background-color: #ffffff;
+  }
