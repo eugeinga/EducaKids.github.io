@@ -34,6 +34,7 @@
     --color-24: #00FF00;
     --color-25: #0000FF;
     --color-26: #E6E6FA;
+    --color-principal: #abddc4;
 }
 
 /*
@@ -95,67 +96,37 @@ header .titulo{
 
 /* Aqui comenzamos a configurar el Nav */
 nav {
-  position: fixed;
+  grid-area: nav;
+  position:fixed;
   top: 40px;
-  bottom: 60px;
-  left: -250px;
-  width: 200px;
+  bottom: 80px;
+  left: -450px;
+  width: 250px;
   height: 50%;
   transition: all 0.9s ease;
   border-radius: 8%;
   z-index: 1;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-  background-image: url('img/background-nav.jpg');
-  border: 10px solid transparent;
-  border-image: url('img/border-nav.jpg') 30% round;
+  background-image: url('img/nav.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  font-size: 100%;
+  padding: 5%;
 }
 
-.nav-image {
-position: absolute;
-top: -20px;
-right: -60px; /*ajusta esto según el tamaño de tu imagen*/
-height: 110%;
-border-radius: 0 30px 30px 0; /*para redondear solo el borde derecho*/
+nav li {
+padding-bottom: 15%;
+padding-left: 0%;
 }
 
-.nav-image2 {
-position:fixed;
-bottom: 150px;
-left: 0%;
-height: 50%;
-border-radius: 0 30px 30px 0;
-/*para redondear solo el borde derecho*/
+nav:hover{
+  background-color:var(--color-principal);
 }
 
-nav:hover {
-background-color:var(--color-6);
-transition: all 1.0s ease;
+nav li:hover{
+  font-size:larger;
 }
-
-li{
-margin: 10%;
-}
-
-li:hover {
-background-color:var(--color-15);
-border-radius: 100px;
-border-color: #000000;
-border-width: 1.5px;
-border-style: solid;
-}
-
-.nav ul {
-list-style: none;
-height: 100%;
-margin: 0;
-padding: 0;
-}
-li:hover {
-animation: cambia-opacidad 1s infinite;
-background-color:var(--color-15);
-}
-
-
 /* Aqui comenzamos a configurar la Section */
 
 section {
