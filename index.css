@@ -16,7 +16,7 @@
     --color-6: #30E3DF;
     --color-7: #000000;
     --color-8: #A9A9A9;
-    ---color-9: #D2B48C;
+    --color-9: #D2B48C;
     --color-10: #C0C0C0;
     --color-11: #FFD700;
     --color-12: #D3D3D3;
@@ -72,11 +72,10 @@ body {
 /* Aqui Inicia el Header */
 header {
   grid-area: header;
-  grid-area: header;
   background-image: url('img/header.jpg');
   box-shadow: auto rgba(0, 0, 0, 0.3);
   border: auto solid #7a7777;
-  border-radius: 10px;
+  border-radius: 3%;
   /* Aqui encontraras el codigo del Logo */
   display: grid;
   grid-template-columns: 1fr 9fr ;
@@ -96,13 +95,12 @@ header .titulo{
 
 /* Aqui comenzamos a configurar el Nav */
 nav {
-  grid-area: nav;
   position: fixed;
   top: 40px;
   bottom: 60px;
   left: -250px;
   width: 200px;
-  height: 50vh;
+  height: 50%;
   transition: all 0.9s ease;
   border-radius: 8%;
   z-index: 1;
