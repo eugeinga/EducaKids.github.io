@@ -141,6 +141,149 @@ section iframe{
   height: 400px;
 }
 
+.calculadora {
+  text-align: center;
+  background-size:cover;
+}
+
+input {
+  text-align: center;
+  border-color: #00FF00;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 50px;
+  animation-name: animacion1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-style: groove;
+  border: 50px solid transparent;
+  border-image: url('img/borderscalculadora.png') 210 round;
+}
+
+@keyframes animacion1 {
+  from {
+  transform:translate3d(300px);
+  }
+  to {
+  transform:translate3d(-300px);
+  }
+}
+
+.suma{
+  animation-name: sumaMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes sumaMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.resta{
+  animation-name: restaMove;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes restaMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+.division{
+  animation-name: divisionMove;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes divisionMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.multiplicacion{
+  animation-name: multiplicacionMove;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes multiplicacionMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+/*
+input:hover {
+  background-color:var(--color-20);
+  color: var(--color-26);
+  border-color:var(--color-4);
+  border-radius:100% ;
+}
+*/
+
+button {
+  text-align: center;
+  background-color: #d61354;
+  border-color: #00FF00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+button:hover {
+  background-color:var(--color-13);
+  border-color:var(--color-4);
+}
+
+.resultado {
+  font-size: 80px;
+  color:var(--color-7);
+}
+
+.resultado:hover {
+  font-size: 120px;
+  color:var(--color-);
+}
+
 aside {
   grid-area: aside;
   text-align: center;

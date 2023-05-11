@@ -51,7 +51,6 @@ function suma(event) {
       document.getElementById("resultado").innerHTML = "No se puede dividir por cero";
     } else {
       let respuesta = parseInt(num1) / parseInt(num2);
-      document.getElementById("resultado").innerHTML = respuesta;
+      document.getElementById("resultado").innerHTML = respuesta.toFixed(2);
     }
-  }
-  
+  }  
