@@ -81,8 +81,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 9fr ;
   grid-template-rows: auto;
-  grid-template-areas:
-  "logo titulo";
+  grid-template-areas:"logo titulo";
   padding: auto;
   margin: auto;
   width: 100%;
@@ -92,6 +91,8 @@ header {
 header .titulo{
     padding: auto;
     margin: auto;
+    font-size: 10vw;
+
 }
 
 /* Aqui comenzamos a configurar el Nav */
