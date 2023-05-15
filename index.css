@@ -230,7 +230,8 @@ aside p:hover {
 
 footer {
   grid-area: footer;
-  background-image: url('img/footer.jpg');
+  /* background-image: url('img/footer.jpg'); */
+  background-color: #abddc4;
   color: white;
   box-shadow: auto rgba(0, 0, 0, 0.3);
   border: auto solid #7a7777;
