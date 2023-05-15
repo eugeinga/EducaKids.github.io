@@ -102,11 +102,11 @@ nav {
   top: 40px;
   bottom: 80px;
   left: -450px;
-  width: 30%;
-  height: 40%;
+  width: 10%;
+  height: 30%;
   transition: all 0.9s ease;
   border-radius: 8%;
-  z-index: 1;
+  z-index: 5;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   background-image: url('img/nav.png');
   background-size: contain;
@@ -114,6 +114,7 @@ nav {
   background-position: 100%;
   font-size: 70%;
   padding: 5%;
+  text-align: left;
 }
 
 nav li {
