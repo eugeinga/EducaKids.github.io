@@ -1,2 +1,3 @@
 <h2>Intrucciones</h2>
 <p> Atrapa los numeros Naturales Utilizalas flechas de direcciones del teclado para mover la moscato</p>
+<p>Scratch es un motor de videojuegos desarrollado por MIT Media Lab.​ Su principal característica consiste en que permite el desarrollo de habilidades mentales mediante el aprendizaje de la programación sin tener conocimientos profundos sobre el código.</p>

@@ -9,3 +9,5 @@ Si pulsas la tecla C, la tecla espacio o pinchas en el círculo cambirás de col
 Pero cuidado, porque si pierdes volverás a empezar desde el principio.
 
 Hay un error. A veces cuando le das a la bandera el escenario no carga como es debido. Para arreglarlo haz clic en bandera de nuevo.</p>
+
+<p>Scratch es un motor de videojuegos desarrollado por MIT Media Lab.​ Su principal característica consiste en que permite el desarrollo de habilidades mentales mediante el aprendizaje de la programación sin tener conocimientos profundos sobre el código.</p>

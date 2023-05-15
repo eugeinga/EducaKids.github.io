@@ -34,16 +34,17 @@
 body {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 80% 10% 5%;
+    grid-template-rows: 5% 10% 80% 5%;
     justify-content: space-around;
     grid-template-areas:
     "header"
-    "section"
     "nav"
+    "section"
     "footer";
     background-image: url('img/body.jpg');
     background-size:auto;
     border-radius: 10px;
+    align-content: space-evenly;
 }
 
 header {
@@ -62,36 +63,37 @@ section{
     grid-area: section;
     text-align: center;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
     grid-template-areas:
-    "section1"
-    "section2";
+    "section1 section2";
     border-color: #000000;
     border-radius: 3px;
+    margin: auto;
+    align-content: space-evenly;
 }
 
 .section1{
     grid-area: section1;
-    display: inline-block;
     border-radius: 3px;
-    text-align:center;
-    margin-bottom: 20%;
-    margin-top: 10%;
+    margin: 5%;
 }
 
 .section2{
     grid-area: section2;
-    display: inline-block;
     background-color: var(--color-principal);
     opacity: 0.9;
-    margin-top: 20%;
-    padding: auto;
     border-radius: 3px;
-    text-align:center;
     border-color: #00CED1;
     border-style: groove;
     font-size: 100%;
+    text-align: center;
+    margin: 5%;
+}
+
+.JuegoTres{
+    margin: 5%;
 }
 
 nav {
@@ -106,20 +108,60 @@ nav {
     opacity: 0.9;
 }
 
+
+
+
+
 button{
     margin: 0.5%;
     padding: 0.5%;
     background-color: var(--color-1);
     color: white;
-    border-radius: 20%;
+    border-radius: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style:initial;
 }
 
 button:hover {
     background-color: var(--color-1-0);
     color: #000000;
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: cambia-opacidad 0.5s infinite;
+}
+
+@keyframes cambia-opacidad {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {

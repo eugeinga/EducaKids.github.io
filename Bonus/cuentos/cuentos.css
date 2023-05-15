@@ -1,6 +1,40 @@
 
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 8% 80% 8%;
+    grid-template-areas:
+    "header header header"
+    "nav1 section nav2"
+    "footer footer footer";
+    grid-gap: 5%;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    justify-content:center;
+}
 
-body {
-    background-image: url(img/body-cuentos.jpg);
-    background-size:cover;
+header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.nav1{
+    grid-area: nav1;
+    background-color: blueviolet;
+}
+
+.nav2{
+    grid-area: nav2;
+    background-color: blueviolet;
+}
+
+section{
+    grid-area: section;
+    background-color: aqua;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blue;
 }

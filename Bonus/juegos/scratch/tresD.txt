@@ -1,5 +1,7 @@
 <h2>Creditos</h2>
 <br>
-<p>Enlace del Juego: https://scratch.mit.edu/projects/598453231/<p>
+https://scratch.mit.edu/projects/598453231/
+<br>
 <br>
 <p>En este Juego encontraras el Mapa de Argentina y sus Provincias</p>
+<p>Scratch es un motor de videojuegos desarrollado por MIT Media Lab.​ Su principal característica consiste en que permite el desarrollo de habilidades mentales mediante el aprendizaje de la programación sin tener conocimientos profundos sobre el código.</p>
