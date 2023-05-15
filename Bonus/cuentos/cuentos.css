@@ -1,3 +1,44 @@
+/* importacio de Fonts de Google */
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* Creamos Variable de colores para nuetro css */
+*{
+    font-family: 'Schoolbell', cursive;
+}
+
+:root {
+  --color-1: #790d31;
+  --color-1-0: #d61354;
+  /* cuando los colores tienen estos nombres quiere decir que es color pero mas claro */
+  --color-2: #DD6E42;
+  --color-3: #F94A29;
+  --color-2-0: #DD6E4295;
+  --color-3-0: #F94A2995;
+  --color-4: #FCE22A;
+  --color-5: #BEE7E8;
+  --color-6: #30E3DF;
+  --color-7: #000000;
+  --color-8: #A9A9A9;
+  --color-9: #D2B48C;
+  --color-10: #C0C0C0;
+  --color-11: #FFD700;
+  --color-12: #D3D3D3;
+  --color-13: #FFFFFF;
+  --color-14: #87CEEB;
+  --color-15: #00CED1;
+  --color-16: #00FF7F;
+  --color-17: #7FFF00;
+  --color-18: #FFE5B4;
+  --color-19: #FF69B4;
+  --color-20: #800080;
+  --color-21: #FFA500;
+  --color-22: #FF0000;
+  --color-23: #FFFF00;
+  --color-24: #00FF00;
+  --color-25: #0000FF;
+  --color-26: #E6E6FA;
+  --color-principal: #abddc4;
+}
 
 body{
     display: grid;
@@ -7,7 +48,6 @@ body{
     "header header header"
     "nav1 section nav2"
     "footer footer footer";
-    grid-gap: 5%;
     margin: 0%;
     padding: 0%;
     text-align: center;
@@ -16,25 +56,60 @@ body{
 
 header{
     grid-area: header;
-    background-color: blue;
+    background-color: var(--color-principal);
+    border-radius: 3px;
+    border-color: var(--color-13);
+    border-style: ridge;
+    padding: 1%;
+}
+
+header li {
+    margin-right: 15%;
+    margin-left: 5%;
 }
 
 .nav1{
     grid-area: nav1;
-    background-color: blueviolet;
+    background-image: url(img/nav1jpg);
+    background-size: cover;
+    border-style: ridge;
 }
 
 .nav2{
     grid-area: nav2;
-    background-color: blueviolet;
+    background-color:var(--color-1-0);
+    background-image: url(img/nav2.jpg);
+    background-size: cover;
+    border-style: ridge;
+}
+
+ul{
+    text-align: left;
+}
+
+button{
+    background-color: #a9a9a900;
+    border-color: #00000000;
+    padding: 5%;
+    border-radius: 6px;
+    color: rgba(222, 184, 135, 0);
+}
+
+button:hover{
+    background-color: white;
+    padding: 5%;
+    border-radius: 6px;
+    color: #000000;
 }
 
 section{
     grid-area: section;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-style: ridge;
 }
 
 footer{
     grid-area: footer;
-    background-color: blue;
+    background-color:var(--color-principal);
+    border-style: ridge;
 }
