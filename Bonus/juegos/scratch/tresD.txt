@@ -1,0 +1,5 @@
+<h2>Creditos</h2>
+<br>
+<p>Enlace del Juego: https://scratch.mit.edu/projects/598453231/<p>
+<br>
+<p>En este Juego encontraras el Mapa de Argentina y sus Provincias</p>

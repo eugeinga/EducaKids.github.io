@@ -1,0 +1,2 @@
+<h2>Intrucciones</h2>
+<p> Atrapa los numeros Naturales Utilizalas flechas de direcciones del teclado para mover la moscato</p>

@@ -1,0 +1,11 @@
+<h2>Creditos</h2>
+<br>
+https://scratch.mit.edu/projects/442365682/
+<br>
+<br>
+<p>El objetivo del juego es llegar a la bandera sin tocar las paredes del laberinto.
+Se controla con W, A, S, D o los cursores.
+Si pulsas la tecla C, la tecla espacio o pinchas en el círculo cambirás de color.
+Pero cuidado, porque si pierdes volverás a empezar desde el principio.
+
+Hay un error. A veces cuando le das a la bandera el escenario no carga como es debido. Para arreglarlo haz clic en bandera de nuevo.</p>

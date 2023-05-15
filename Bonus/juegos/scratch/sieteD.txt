@@ -1,0 +1,4 @@
+<h2>Creditos</h2>
+<br>
+<br>
+<p>Sopa de letras: Para Seleccionar una palabra se le tiene que dar Clic en la primera letra y luego en la ultima</p>

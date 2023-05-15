@@ -1,0 +1,7 @@
+<h2>Creditos</h2>
+https://scratch.mit.edu/projects/810508731/
+
+
+<p> ▶︎Pon la pelota en el mismo tanque del mismo color que la pelota para anotar.
+<br>▶︎Límite de tiempo: 30 segundos
+<br>▶︎ Récord mundial: se mostrará la puntuación más alta entre los que jugaron el juego. </p>
