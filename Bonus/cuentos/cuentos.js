@@ -6,7 +6,7 @@ var lectura = document.querySelector('#lectura');
 
 
 function VideoUno() {
-  fetch('libreria/VideoUno.html')
+  fetch('libreria/VideoUno.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -14,7 +14,7 @@ function VideoUno() {
 }
 
 function VideoDos() {
-  fetch('libreria/VideoDos.html')
+  fetch('libreria/VideoDos.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -22,7 +22,7 @@ function VideoDos() {
 }
 
 function VideoTres() {
-  fetch('libreria/VideoTres.html')
+  fetch('libreria/VideoTres.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -30,7 +30,7 @@ function VideoTres() {
 }
 
 function VideoCuatro() {
-  fetch('libreria/VideoCuatro.html')
+  fetch('libreria/VideoCuatro.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -38,7 +38,7 @@ function VideoCuatro() {
 }
 
 function VideoCinco() {
-  fetch('libreria/VideoCinco.html')
+  fetch('libreria/VideoCinco.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -46,7 +46,7 @@ function VideoCinco() {
 }
 
 function VideoSeis() {
-  fetch('libreria/VideoSeis.html')
+  fetch('libreria/VideoSeis.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -54,7 +54,7 @@ function VideoSeis() {
 }
 
 function VideoSiete() {
-  fetch('libreria/VideoSiete.html')
+  fetch('libreria/VideoSiete.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -62,7 +62,7 @@ function VideoSiete() {
 }
 
 function VideoOcho() {
-  fetch('libreria/VideoOcho.html')
+  fetch('libreria/VideoOcho.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -70,7 +70,7 @@ function VideoOcho() {
 }
 
 function VideoNueve() {
-  fetch('libreria/VideoNueve.html')
+  fetch('libreria/VideoNueve.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
@@ -78,7 +78,7 @@ function VideoNueve() {
 }
 
 function VideoDiez() {
-  fetch('libreria/VideoDiez.html')
+  fetch('libreria/VideoDiez.txt')
     .then(data => data.text())
     .then(data => {
       lectura.innerHTML = `${data}`
