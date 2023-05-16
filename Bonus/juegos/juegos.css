@@ -112,20 +112,22 @@ nav {
 
 
 
-button{
-    margin: 0.5%;
-    padding: 0.5%;
-    background-color: var(--color-1);
-    color: white;
-    border-radius: 3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style:initial;
+button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--color-8);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
 button:hover {
-    background-color: var(--color-1-0);
-    color: #000000;
-    animation: cambia-opacidad 0.5s infinite;
+  background-color:var(--color-principal);
+  color:#000000;
 }
 
 @keyframes cambia-opacidad {
