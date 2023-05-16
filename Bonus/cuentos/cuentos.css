@@ -69,20 +69,29 @@ header:hover {
 
 nav {
   grid-area: nav;
-  text-align: left;
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--color-8);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color:var(--color-principal);
+  color:#000000;
 }
 
 /* */
-select {
-  padding: 0.5em;
-  border: none; /* Remueve el borde predeterminado */
-  border-radius: 25px; /* Ajusta la curvatura del borde */
-  background: linear-gradient(#fdfdfd, #e2e2e2); /* Establece un degradado de color */
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
-  font-size: 16px;
-  color: #333;
-  width: 20%;
-}
+
 section {
   grid-area: section;
   text-align: center;
