@@ -15,30 +15,19 @@
           <!-- Aqui finaliza las llamadas de font awesome -->
 </head>
 <body>
-  <header>
-<div class="titulo">
-    <h1>
-        <i class="fa-solid fa-j fa-fade fa-1x" style="color:rgb(255, 53, 2);"></i>
-        <i class="fa-solid fa-u fa-fade fa-1x" style="color:rgb(104, 4, 255);"></i>
-        <i class="fa-solid fa-e fa-fade fa-1x" style="color:rgb(58, 248, 11);"></i>
-        <i class="fa-solid fa-g fa-fade fa-1x" style="color:rgb(238, 4, 168);"></i>
-        <i class="fa-solid fa-o fa-fade fa-1x" style="color:rgb(0, 238, 255);"></i>
-        <i class="fa-solid fa-s fa-fade fa-1x" style="color:rgb(255, 0, 120);"></i>
-    </h1>
-    <p>Zona de Juego - EducaKids </p>
-</div></header>
 <nav>
-  <div>
-    <button onclick="uno()">Juego de memoria </button>
-    <button onclick="dos()">Atrapa El Numero</button>
-    <button onclick="tres()">Mapa de Argentina</button>
-    <button onclick="cuatro()">Bolas De Colores</button>
-    <button onclick="cinco()">Rompe Bloques</button>
-    <button onclick="seis()">Decora tu Pastel</button>
-    <button onclick="siete()">Sopa De Letras</button>
-    <button onclick="ocho()">Laberinto</button>
-    <button onclick="nueve()">Reloj</button>
-    <button onclick="diez()">Pinta a Hello Kitty</button>
+  <div class="botoneras">
+    <button onclick="uno()" class="botonuno">Juego de memoria </button>
+    <button onclick="dos()" class="botondos">Atrapa El Numero</button>
+    <button onclick="tres()" class="botontres">Mapa de Argentina</button>
+    <button onclick="cuatro()"class="botocuatro">Bolas De Colores</button>
+    <button onclick="cinco()" class="botoncinco">Rompe Bloques</button>
+    <button onclick="seis()" class="botonseis">Decora tu Pastel</button>
+    <button onclick="siete()" class="botonsiete">Sopa De Letras</button>
+    <button onclick="ocho()" class="botonocho">Laberinto</button>
+    <button onclick="nueve()" class="botonnueve">Reloj</button>
+    <button onclick="diez()" class="botondiez">Pinta a Hello Kitty</button>
+    <button onclick="window.location.href = '../../../';">Inicio</button>
     </div>
 </nav>
   <section>
@@ -51,24 +40,6 @@
       <div id="contenido2">
       </div> </div>
   </section>
- 
-
-
-
-  <!-- Footer -->
-  <footer>
-    <div class="div-boton1">
-      <p>
-          <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids" target="_blank" ><i class="fa-brands fa-youtube fa-2xl" style="color: #2ec27e;"></i></a>
-      </p>
-      </div>
-      <div class="div-boton2">
-          <a href="Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl " style="color: #ff8b06;"></i></a>
-      </div>
-      <div class="div-boton3">
-          <a href="Bonus/juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl" style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->      
-      </div>
-  </footer>
   <script src="https://unpkg.com/vue@3"></script>
   <script src="juegos.vue"></script>
 </body>

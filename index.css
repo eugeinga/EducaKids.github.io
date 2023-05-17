@@ -66,7 +66,7 @@ h6 {
 body {
   display: grid;
   grid-template-columns: 10% 60% 30%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% auto 5%;
   grid-template-areas:
     "header header header"
     "nav section aside"
@@ -132,6 +132,7 @@ nav {
   border-radius: 8%;
   z-index: 5;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-principal);
   background-image: url('img/nav.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -142,7 +143,7 @@ nav {
 }
 
 nav li {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   padding-left: 0%;
 }
 
@@ -151,7 +152,7 @@ nav:hover {
 }
 
 nav li:hover {
-  font-size: larger;
+  font-size:x-large;
 }
 
 /* SECTION style
@@ -176,7 +177,7 @@ aside {
   grid-area: aside;
   text-align: center;
   width: auto;
-  height: 100%;
+  height: auto;
   background-color: #abddc4;
   padding: auto;
   margin: 8%;
@@ -269,52 +270,128 @@ footer .div-boton3 {
 
 
 /* MEDIDAS
-===========================================*/
-/*
-Tamaños de pantalla comunes:
-    Móvil: 360 x 640
-    Móvil: 375 x 667
-    Móvil: 360 x 720
-    iPhone X: 375 x 812
-    Pixel 2: 411 x 731
-    Tableta: 768 x 1024
-    Ordenador portátil: 1366 x 768
-    Ordenador portátil o desktop de alta resolución: 1920 x 1080
+===========================================
 */
 
-@media screen and (min-width: 992px) {}
+/* Galaxy S3, S4, S5: 360 x 640
+HTC One: 360 x 640 */
 
-@media screen and (max-width: 991px) and (min-width: 768px) {}
+@media screen and (max-width: 360px){
+  header .logo {
+    width: 1000%;
+    height: 1000%;
+  }
 
-/* desktop de alta resolución: 1920 x 1080 */
-@media screen and (min-width:1920px) {
-  section iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
+  nav {
+    width: 45%;
+    height: 30%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: medium;
   }
 }
 
-/* Tableta: 768 x 1024 */
-@media screen and (min-width:768px) and (max-width:1024px) {
-  .logo img {
-    max-width: 30%
+@media screen and (max-width: 640px){
+  header .logo {
+    width: 1000%;
+    height: 1000%;
+  }
+
+  nav {
+    width: 30%;
+    height: 70%;
   }
 }
 
 
-/* Movil */
-@media screen and (max-width: 360px) {
+/* Pantallas pequeñas (usadas por ejemplo en netbooks): 1024 x 600 */
+@media screen and (max-width: 1024px){
+  nav {
+    width: 20%;
+    height: 35%;
+  }
+}
+@media screen and (max-width: 600px){
+  nav {
+    width: 30%;
+    height: 35%;
+  }
+}
 
-  section iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
+/* Pantallas medianas: 1280 x 720 / 1280 x 800 */
+
+@media screen and (max-width: 1280px){
+
+  nav {
+    width: 15%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 720px){
+  header .logo {
+    width: 1000%;
+    height: 1000%;
+  }
+  nav {
+    width: 40%;
+    height: 30%;
+    font-size:xx-large;
+  }
+}
+
+@media screen and (max-width: 800px){
+  header .logo {
+    width: 800%;
+    height: 500%;
   }
 
+  nav {
+    width: 30%;
+    height: 35%;
+    font-size:medium;
+  }
 }
 
 
-@media screen and (max-width: 640px) {}
+/*
+Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400 x 900 o 1600 x 1200.
+*/
+
+@media screen and (max-width: 1400px){
+  nav {
+    width: 20%;
+    height: 35%;
+    font-size:medium;
+  }
+}
+
+@media screen and (max-width: 900px){
+  header .logo {
+    width: 800%;
+    height: 500%;
+  }
+
+  nav {
+    width: 35%;
+    height: 30%;
+    font-size:medium;
+  }
+}
+
+@media screen and (max-width: 1600px){
+  nav {
+    width: 18%;
+    height: 30%;
+    font-size:medium;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  nav {
+    width: 15%;
+    height: 35%;
+    font-size:medium;
+  }
+}

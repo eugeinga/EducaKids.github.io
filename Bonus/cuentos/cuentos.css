@@ -43,12 +43,11 @@
 body {
   display: grid;
   grid-template-columns: 80%;
-  grid-template-rows: 10% 10% 70% 10%;
+  grid-template-rows: auto 10% auto;
   grid-template-areas:
     "header"
     "nav"
-    "section"
-    "footer";
+    "section";
   justify-content: center;
   background-color: #e8f5fb;
   text-align: center;
@@ -96,22 +95,4 @@ section {
   grid-area: section;
   text-align: center;
   grid-auto-flow: column;
-}
-
-footer {
-  grid-area: footer;
-  background-image: url(../../img/header.jpg);
-  justify-content: center;
-}
-
-footer:hover {
-  border-color: var(--color-26);
-}
-footer li {
-  margin-right: 8%;
-  margin-left: 8%;
-}
-
-footer ul li a {
-  text-decoration: none;
 }
