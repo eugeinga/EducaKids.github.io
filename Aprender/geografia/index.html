@@ -17,9 +17,6 @@
     <link rel="icon" href="img/icono.png">
     <!-- Aqui finaliza las llamadas de font awesome -->
     <link rel="icon" href="img/icono.png">
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_4apvnCAurNgMG2K1ruyetc_-pHiWRw&callback=initMap"
-    defer ></script>
 
 </head>
 
@@ -48,16 +45,21 @@
                         class="fa-solid fa-bars fa-bounce fa-2xl"></i></a></p>
         </div>
         <div class="section1">
+            <h3>My Google Maps Demo</h3>
+            <!--The div element for the map -->
             <div id="map"></div>
-
+        
             <!--
               The `defer` attribute causes the callback to execute after the full HTML
               document has been parsed. For non-blocking uses, avoiding race conditions,
               and consistent behavior across browsers, consider loading using Promises
               with https://www.npmjs.com/package/@googlemaps/js-api-loader.
               -->
- 
-                </div>
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_4apvnCAurNgMG2K1ruyetc_-pHiWRw&callback=initMap&v=weekly"
+              defer
+            ></script>
+        
         <div class="section2">
 
         </div>
