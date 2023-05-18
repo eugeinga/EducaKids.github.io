@@ -7,6 +7,7 @@ function mostrarMenu() {
     localStorage.setItem('menuOpen', nav.style.left === '0' ? 'true' : 'false');
 }
 
+
 let map;
 
 function initMap() {
