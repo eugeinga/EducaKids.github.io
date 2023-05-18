@@ -74,7 +74,7 @@ h6 {
 
 body {
   display: grid;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 10% auto 10%;
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "header header header"
@@ -83,6 +83,7 @@ body {
   background-image: url('img/body.jpg');
   font-family: 'Schoolbell', cursive;
   background-size: cover;
+  gap: 5%;
 }
 
 /* HEADER style
@@ -133,93 +134,61 @@ header .logo {
 section {
   grid-area: section;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto ;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto ;
   grid-template-areas:
-  "section1"
-  "section2 section3";
-}
-
-section iframe {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
+  "section1 section2"
+  "section3 section3";
 }
 
 .section1{
   grid-area: section1;
-
+  border-color: var(--color-8);
+  border-width:5px;
+  padding: 5%;
+  margin: 2%;
 }
 
-.section  #map {
-  height: 100%;
-  width: auto ;
+.section1 button {
+  /* Estilos para cada botón individual */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.section1 button:hover {
+  /* Estilos al pasar el mouse por encima de los botones */
+  background-color:var(--color-principal);
 }
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px; /* The height is 400 pixels */
+  display: grid;
+  height: 500px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+  text-align: right;
 }
 
 
-/* ASIDE style
-===========================================*/
+.section2{
+  grid-area: section2;
+  border-color: var(--color-principal);
+  margin: 5%;
+  background-color: white;
+}
 
-aside {
-  grid-area: aside;
+.section3{
+  grid-area: section3;
   text-align: center;
-  width: auto;
-  height: auto;
-  background-color: #abddc4;
-  padding: auto;
-  margin: 8%;
-  margin-bottom: 8%;
+  margin: 5%;
 }
 
-aside a.no-underline {
-  text-decoration: none;
-}
-
-aside img {
-  max-width: 25%;
-  margin: 10px;
-  text-align: center;
-}
-
-/* Inicio de opacidad */
-aside img:hover {
-  animation: cambia-opacidad 1s infinite;
-  background-color: var(--color-15);
-  border-radius: 80%;
-}
-
-@keyframes cambia-opacidad {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Fin  de opacidad */
-
-aside p {
-  text-align: center;
-  padding: 5%;
-  color: var(--color-1);
-}
-
-aside p:hover {
-  color: var(--color-7);
-}
 
 /* FOOTER style
 ===========================================*/
@@ -239,7 +208,7 @@ footer {
     "div-boton1 div-boton2 div-boton3";
   padding: auto;
   margin: auto;
-  margin-top: 8%;
+  margin-top: 3%;
   width: 100%;
   height: 100%;
 }

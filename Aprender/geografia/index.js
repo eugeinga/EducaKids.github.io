@@ -28,3 +28,96 @@ new Vue({
     },
   },
 });
+
+
+/////////////\
+
+///Creacion de Variables
+
+var videos = document.querySelector('#video');
+
+/////////////// Videos
+
+
+function video1() {
+  fetch('videos/video1.txt')
+    .then(data => data.text())
+    .then(data => {
+      videos.innerHTML = `${data}`
+    })
+}
+
+////////////// Videos 
+
+
+function video2() {
+    fetch('videos/video2.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video3() {
+    fetch('videos/video3.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video4() {
+    fetch('videos/video4.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video5() {
+    fetch('videos/video5.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video6() {
+    fetch('videos/video6.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video7() {
+    fetch('videos/video7.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video8() {
+    fetch('videos/video8.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video9() {
+    fetch('videos/video9.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
+
+  function video10() {
+    fetch('videos/video10.txt')
+      .then(data => data.text())
+      .then(data => {
+        videos.innerHTML = `${data}`
+      })
+  }
