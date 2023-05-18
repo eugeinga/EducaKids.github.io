@@ -18,9 +18,8 @@
     <!-- Aqui finaliza las llamadas de font awesome -->
     <link rel="icon" href="img/icono.png">
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_4apvnCAurNgMG2K1ruyetc_-pHiWRw"
-    defer
-  ></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_4apvnCAurNgMG2K1ruyetc_-pHiWRw&callback=initMap"
+    defer ></script>
 
 </head>
 
@@ -50,7 +49,7 @@
         </div>
         <div class="section1">
             <div id="map"></div>
-            <button onclick="initMap()"> Inicial Map </button>
+
             <!--
               The `defer` attribute causes the callback to execute after the full HTML
               document has been parsed. For non-blocking uses, avoiding race conditions,
