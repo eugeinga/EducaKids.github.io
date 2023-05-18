@@ -10,21 +10,21 @@ function mostrarMenu() {
 
 
 new Vue({
-    el: '#app',
-    data() {
-        return {
-            map: null,
-        };
+  el: '#app',
+  data() {
+    return {
+      map: null,
+    };
+  },
+  mounted() {
+    this.initMap();
+  },
+  methods: {
+    initMap() {
+      this.map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 37.7749, lng: -122.4194 }, // Coordenadas para centrar el mapa
+        zoom: 12, // Nivel de zoom inicial
+      });
     },
-    mounted() {
-        this.initMap();
-    },
-    methods: {
-        initMap() {
-            this.map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 37.7749, lng: -122.4194 }, // Coordenadas para centrar el mapa
-                zoom: 12, // Nivel de zoom inicial
-            });
-        },
-    },
+  },
 });
