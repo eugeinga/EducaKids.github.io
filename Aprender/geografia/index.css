@@ -154,6 +154,7 @@ section iframe {
 
 .section  #map {
   height: 100%;
+  width: auto ;
 }
 
 /* ASIDE style
