@@ -145,7 +145,7 @@ section {
 
 section .geografia {
   grid-area: "intro-geo";
-  width: 80%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -153,27 +153,33 @@ section .geografia {
   grid-template-areas: 
     "intro intro"
     "mapa-1 mapa-2";
+  text-align: justify;
+  align-content: center;
+
 }
 
 div .mapa-1 {
-  width: 80%;
+  width: 90%;
   grid-area: mapa-1;
+  align-content: center;
 }
 
 div .mapa-2 {
-  width: 80%;
+  width: 90%;
   grid-area: mapa-2;
+  align-content: center;
 }
 
 section .googlemaps {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-area: "googlemaps";
+  align-content: center;
 }
 
 section .continentes {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-area: "continentes";
@@ -181,14 +187,17 @@ section .continentes {
   grid-template-rows: auto;
   grid-template-areas: 
     "botones video-cont";
+  align-content: center;
 }
 
 div .botones {
   grid-area: "botones";
+  align-content: center;
 }
 
 div .video-cont {
   grid-area: "video-cont";
+  align-content: center;
 }
 
 section .preguntas {
@@ -196,6 +205,7 @@ section .preguntas {
   height: auto;
   display: grid;
   grid-area: "preguntas";
+  align-content: center;
 }
 
 /* .section1{
