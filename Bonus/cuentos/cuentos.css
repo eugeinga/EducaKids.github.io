@@ -82,6 +82,12 @@ nav button {
 nav button:hover {
   background-color:var(--color-principal);
   color: #000000;
+  font-size:x-small;
+}
+
+iframe{
+  width: 80%;
+  height: 400px;
 }
 
 /* Estilos del contenido */

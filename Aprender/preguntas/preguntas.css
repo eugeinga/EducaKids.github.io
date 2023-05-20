@@ -1,0 +1,103 @@
+body {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header"
+    "nav section"
+    "footer footer";
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #50afa556;
+  background-image: url(../../img/imagenes-globales/borde2.png);
+  background-size: cover;
+}
+
+header {
+  grid-area: header;
+  background-color: #acd4be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url(../../img/header.jpg);
+}
+
+nav {
+  grid-area: nav;
+  margin: 25%;
+  width: 30%;
+  height: auto;
+  text-align: left;
+}
+
+nav .botones {
+  border-radius: 3px;
+  width: 100%;
+  text-align: left;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+button {
+  background-color: #75160f;
+  margin-bottom: 5%;
+  cursor: pointer;
+  border: none;
+  color: #e7867a;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e7867a;
+  color: #75160f;
+}
+
+section {
+  display: grid;
+  grid-area: section;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "preguntas puntos";
+  column-gap: 5%;
+  padding: 5%;
+  padding-top: 30%;
+  padding-right: 30%;
+  margin: 5%;
+}
+
+section .preguntas {
+  grid-area: preguntas;
+  background-color: #eb7067;
+  text-align: center;
+  margin: 1%;
+  padding: 0%;
+  display: grid;
+  height: auto;
+  text-align: center;
+  border-radius: 3px;
+}
+
+section .puntos {
+  grid-area: puntos;
+  background-color: #eb7067;
+  padding: 20px;
+  color: #75160f;
+  font-weight: bold;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #acd4be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url(../../img/footer.jpg);
+}

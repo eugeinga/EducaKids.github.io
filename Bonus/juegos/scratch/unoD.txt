@@ -1,9 +1,9 @@
-<h2>Instruccioness</h1>
-<p>Juego de memoria donde debes encontrar el par de cartas para que se oculten. 
-Ganas al completar todos los pares.<br>
+<h1>Como Jugar ..</h1>
 <br><br>
+<h2>Es un Juego de memoria donde debes encontrar Dos Figuras iguales , una tras otra, Ganaras al completar todos los pares.<br>
+<br>
 Se puede reutilizar para otros juegos educativos o de diversión... <br>Solo debes modificar las tarjetas 1 y 2, 3 y 4 etc hasta la 17 y 18.<br> Luego un algoritmo las ordena en forma aleatoria para que el juego siempre sea distinto.
-</p>
+</h2>
 <span>
 Juego de memoria creado a para mis hijos fanáticos de Bajoterra y a veces un poco aburridos en vacaciones
 @LabTeD_benitezm

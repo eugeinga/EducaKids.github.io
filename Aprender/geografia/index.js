@@ -30,7 +30,7 @@ new Vue({
 });
 
 
-/////////////\
+/////////////
 
 ///Creacion de Variables
 
@@ -46,9 +46,6 @@ function video1() {
       videos.innerHTML = `${data}`
     })
 }
-
-////////////// Videos 
-
 
 function video2() {
     fetch('videos/video2.txt')
@@ -121,3 +118,7 @@ function video2() {
         videos.innerHTML = `${data}`
       })
   }
+
+  ///// ////////
+
+
