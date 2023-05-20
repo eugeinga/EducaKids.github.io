@@ -137,14 +137,14 @@ section {
   grid-template-columns: auto;
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
-    "mapas mapas"
+    "geo geo"
     "mapa1 mapa2"
     "googlemaps googlemaps"
     "continentes continentes";
 }
 
-.mapas {
-  grid-area: "mapas";
+.geografia {
+  grid-area: "geo";
   width: 100%;
   height: auto;
   display: grid;
