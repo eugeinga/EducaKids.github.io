@@ -97,7 +97,7 @@ header {
   /* Aqui encontraras el codigo del Logo */
   display: grid;
   grid-template-columns: 1fr 9fr;
-  grid-template-rows: auto;
+  grid-template-rows: max-content; /* auto */
   grid-template-areas: "logo titulo";
   /* padding: auto; */
   /* margin: auto; */
@@ -116,7 +116,7 @@ header .logo {
   grid-area: logo;
   margin: 0;
   padding: 0;
-  width: 400%;
+  width: 200%; /* 400% */
   height: 100%;
 }
 
