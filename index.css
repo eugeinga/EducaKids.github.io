@@ -34,7 +34,16 @@
   --color-24: #00FF00;
   --color-25: #0000FF;
   --color-26: #E6E6FA;
-  --color-principal: #abddc4;
+  /* --color-principal: #abddc4; */
+  --color-principal: #acd4be
+
+  /* Paleta de colores según la imagen del header */
+  --color-27: #acd4be;
+  --color-28: #50afa5;
+  --color-29: #75160f;
+  --color-30: #e7857a;
+  --color-31: #eb7067;
+
 }
 
 /*
