@@ -137,19 +137,21 @@ section {
   grid-template-columns: auto;
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
-    "geo geo"
-    "mapa1 mapa2"
-    "googlemaps googlemaps"
-    "continentes continentes";
+    "intro-geo"
+    "googlemaps"
+    "continentes"
+    "preguntas";
 }
 
 .geografia {
-  grid-area: "geo";
+  grid-area: "intro-geo";
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "mapa-1 mapa-2"
+  /* grid-template-rows: repeat(2,auto); */
+  grid-template-areas: 
+    "mapa-1 mapa-2"
 }
 
 .googlemaps {
@@ -158,15 +160,38 @@ section {
   display: grid;
   grid-area: "googlemaps";
 }
-.section1{
+
+.continentes {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-area: "continentes";
+}
+
+.preguntas {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-area: "preguntas";
+}
+
+.geografia .mapa-1{
+  grid-area: mapa-1;
+}
+
+.geografia .mapa-2 {
+  grid-area: mapa-2;
+}
+
+/* .section1{
   grid-area: section1;
   border-color: var(--color-8);
   border-width:5px;
   padding: 5%;
   margin: 2%;
-}
+} */
 
-.section1 button {
+.section button {
   /* Estilos para cada botón individual */
   display: inline-block;
   padding: 10px 20px;
@@ -179,7 +204,7 @@ section {
   margin-bottom: 10px;
 }
 
-.section1 button:hover {
+.section button:hover {
   /* Estilos al pasar el mouse por encima de los botones */
   background-color:var(--color-principal);
 }
