@@ -43,37 +43,47 @@
         </div>
     </header>
     <section>
-        <section1 class="section1">
-            <br>
-            <button onclick="video1()">Los Mapas</button>
-            <button onclick="video2()">Los Mapas II</button>
-            <button onclick="video5()">Oceanos</button>
-            <button onclick="video6()">America</button>
-            <button onclick="video3()">Europa</button>
-            <button onclick="video7()">Africa</button>
-            <button onclick="video8()">Asia</button>
-            <button onclick="video9()">La Antartida</button>
-            <button onclick="video4()">60 Preguntas</button>
-            <button onclick="video10()">Oceania</button>
-            <br>
-            <br>
-            <div id="video">
+        <section1>
+            <div class="mapas">
+                <h1>Los Mapas</h1>
             </div>
+            <br>
+            <div class="mapa1">
+                <iframe src="video1()" title="YouTube video Los Mapas" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="mapa2">
+                <iframe src="video2()" title="YouTube video Los Mapas II" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="googlemaps">
+                <h1>Navega en Google Maps</h1>
+                <br>
+                <div id="app">
+                    <div id="map"></div>
+                    <br>
+                    <p>NOTA: Presione F5 , Si demora mucho en aparecer el Mapa</p>
+                </div>
+                <!-- <button onclick="video1()">Los Mapas</button> -->
+                <!-- <button onclick="video2()">Los Mapas II</button> -->
+            </div>
+            <div class="continentes">
+                <button onclick="video5()">Oceanos</button>
+                <button onclick="video6()">America</button>
+                <button onclick="video3()">Europa</button>
+                <button onclick="video7()">Africa</button>
+                <button onclick="video8()">Asia</button>
+                <button onclick="video9()">La Antartida</button>
+
+                <button onclick="video10()">Oceania</button>
+            </div>
+            <br>
+            <button onclick="video4()">60 Preguntas</button>
             <br>
             <button><a href="../preguntas/">Ir a la Pagina de Preguntas</a></button>
         </section1>
-    <section2 class="section2">
-        <h1>Navega En Google Map</h1>
-        <br><br>
-        <br>
-        <br>
-        <br>
-            <div id="app">
-                <div id="map"></div>
-                <br>
-                <p>NOTA: Presione F5 , Si demora mucho en aparecer el Mapa</p>
-            </div>
-        </section2>
     </section>
     <footer>
         <div class="div-boton1">
@@ -95,4 +105,5 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_4apvnCAurNgMG2K1ruyetc_-pHiWRw&"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
