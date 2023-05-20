@@ -144,6 +144,7 @@ section {
 }
 
 .mapas {
+  grid-area: "mapas";
   width: 100%;
   height: auto;
   display: grid;
@@ -151,6 +152,12 @@ section {
   grid-template-areas: "mapa-1 mapa-2"
 }
 
+.googlemaps {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-area: "googlemaps";
+}
 .section1{
   grid-area: section1;
   border-color: var(--color-8);
