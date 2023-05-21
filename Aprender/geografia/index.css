@@ -153,17 +153,16 @@ section {
 
 .intro-geo {
   grid-area: "intro-geo";
-  /* width: 100%; */
-  /* height: auto; */
+  width: 90%;
+  text-align: justify;
+  align-content: center;
+  /* height: auto;
   /* display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2,auto);
   grid-template-areas: 
     "intro intro"
     "mapa-1 mapa-2"; */
-  /* text-align: justify; */
-  /* align-content: center; */
-
 }
 
 .widget-1 {
@@ -186,18 +185,6 @@ section {
   align-content: center;
 }
 
-.continentes {
-  width: 90%;
-  height: auto;
-  grid-area: "continentes";
-  /*   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "botones video-cont"; */
-  align-content: center;
-}
-
 .botones-cont {
   grid-area: "botones-cont";
   align-content: center;
@@ -208,21 +195,13 @@ section {
   align-content: center;
 }
 
-section .preguntas {
-  width: 100%;
+.preguntas {
+  width: 90%;
   height: auto;
   /* display: grid; */
   grid-area: "preguntas";
   align-content: center;
 }
-
-/* .section1{
-  grid-area: section1;
-  border-color: var(--color-8);
-  border-width:5px;
-  padding: 5%;
-  margin: 2%;
-} */
 
 section button {
   /* Estilos para cada botón individual */
@@ -247,18 +226,11 @@ section button:hover {
   display: grid;
   height: 400px;
   /* The height is 400 pixels */
-  width: 60%;
+  width: 80%;
   /* The width is the width of the web page */
   text-align: center;
   align-content: center;
 }
-
-
-/* .section2{
-  grid-area: section2;
-  border-color: var(--color-principal);
-  margin: 5%;
-} */
 
 
 /* FOOTER style
