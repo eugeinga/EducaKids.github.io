@@ -133,11 +133,11 @@ header .logo {
 
 section {
   grid-area: section;
-  width: 90%;
+  width: 100%;
   align-content: center;
   text-align: justify;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
     "intro-geo intro-geo"
@@ -147,8 +147,8 @@ section {
     "video-cont video-cont"
     "preguntas preguntas";
   background-color: blueviolet;
-  padding: 5%;
-  margin: 3%;
+  padding: 20px;
+  /* margin: 3%; */
 }
 
 .intro-geo {
