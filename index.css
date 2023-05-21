@@ -92,7 +92,8 @@ body {
     "header header header"
     "nav section aside"
     "footer footer footer";
-  background-image: url('img/body.jpg');
+  /* background-image: url('img/body.jpg'); */
+  background-color: var(--color-principal);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
 }
@@ -153,6 +154,7 @@ nav {
   border-radius: 8%;
   z-index: 5;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: var(--color-principal); */
   background-color: var(--color-principal);
   background-image: url('img/nav.png');
   background-size: contain;
@@ -199,10 +201,10 @@ aside {
   text-align: center;
   width: auto;
   height: auto;
-  background-color: #abddc4;
+  background-color: var(--color-30);
   padding: auto;
-  margin: 8%;
-  margin-bottom: 8%;
+  /* margin: 8%;
+  margin-bottom: 8%; */
 }
 
 aside a.no-underline {
