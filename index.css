@@ -50,7 +50,7 @@ Importacion de Font Localmente
 
   /* Paleta de colores según la imagen del header */
   --color-27: #acd4be;
-  --color-27claro: #c6f4db;
+  --color-27claro: #cfffe5;
   --color-28: #50afa5;
   --color-29: #75160f;
   --color-30: #e7857a;
@@ -89,7 +89,7 @@ h6 {
 
 body {
   display: grid;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 10% 70% 20%;
   grid-template-rows: 10% auto 5%;
   grid-template-areas:
     "header header header"
@@ -259,7 +259,7 @@ aside p:hover {
 footer {
   grid-area: footer;
   /* background-image: url('img/footer.jpg'); */
-  background-color: #abddc4;
+  background-color:var(--color-27);
   color: white;
   box-shadow: auto rgba(0, 0, 0, 0.3);
   border: auto solid #7a7777;
