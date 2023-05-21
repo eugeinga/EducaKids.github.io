@@ -146,14 +146,14 @@ section {
     "botones-cont botones-cont"
     "video-cont video-cont"
     "preguntas preguntas";
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
-  font-size: 30px;
+  background-color: blueviolet;
+  padding: 5%;
+  margin: 3%;
 }
 
 .intro-geo {
   grid-area: "intro-geo";
-  width: 90%;
+  /* width: 100%; */
   text-align: justify;
   align-content: center;
   /* height: auto;
@@ -166,20 +166,20 @@ section {
 }
 
 .widget-1 {
-  width: 90%;
+  /* width: 90%; */
   grid-area: widget-1;
   align-content: center;
 }
 
 .widget-2 {
-  width: 90%;
+  /* width: 90%; */
   grid-area: widget-2;
   align-content: center;
 }
 
 .googlemaps {
-  width: 90%;
-  height: auto;
+  /* width: 90%; */
+  /* height: auto; */
   /* display: grid; */
   grid-area: "googlemaps";
   align-content: center;
@@ -196,8 +196,8 @@ section {
 }
 
 .preguntas {
-  width: 90%;
-  height: auto;
+  /* width: 90%; */
+  /* height: auto; */
   /* display: grid; */
   grid-area: "preguntas";
   align-content: center;
