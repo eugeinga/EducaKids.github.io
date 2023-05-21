@@ -192,14 +192,14 @@ section {
   font-size: larger;
 }
 
-section iframe {
-  /* position: relative; */
-  /* top: 0;
-  left: 0; */
-  /* width: 100%;
-  height: 400px; */
-  /* padding-top: 80%; */
-}
+/* section iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  padding-top: 80%;
+} */
 
 .contenedor-video{
   /* Contenedor del video de portada */
@@ -211,12 +211,12 @@ section iframe {
 
 .video{
   position:absolute;
-  top: 0;
+  /* top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 }
 
 /* ASIDE style
