@@ -74,12 +74,12 @@ h6 {
 
 body {
   display: grid;
-  grid-template-columns: 10% auto 10%;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
   grid-template-areas:
-    "header header header"
-    "section section section"
-    "footer footer footer";
+    "header header"
+    "section section"
+    "footer footer";
   background-image: url('img/body.jpg');
   font-family: 'Schoolbell', cursive;
   background-size: cover;
@@ -133,77 +133,82 @@ header .logo {
 
 section {
   grid-area: section;
+  width: 90%;
+  align-content: center;
+  text-align: justify;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(6, auto);
   grid-template-areas:
-    "intro-geo"
-    "googlemaps"
-    "continentes"
-    "preguntas";
+    "intro-geo intro-geo"
+    "widget-1 widget-2"
+    "googlemaps googlemaps"
+    "botones-cont botones-cont"
+    "video-cont video-cont"
+    "preguntas preguntas";
 }
 
-section .geografia {
+.intro-geo {
   grid-area: "intro-geo";
-  width: 90%;
-  height: auto;
-  display: grid;
+  /* width: 100%; */
+  /* height: auto; */
+  /* display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2,auto);
   grid-template-areas: 
     "intro intro"
-    "mapa-1 mapa-2";
-  text-align: justify;
-  align-content: center;
+    "mapa-1 mapa-2"; */
+  /* text-align: justify; */
+  /* align-content: center; */
 
 }
 
-div .mapa-1 {
+.widget-1 {
   width: 90%;
-  grid-area: mapa-1;
+  grid-area: widget-1;
   align-content: center;
 }
 
-div .mapa-2 {
+.widget-2 {
   width: 90%;
-  grid-area: mapa-2;
+  grid-area: widget-2;
   align-content: center;
 }
 
-section .googlemaps {
+.googlemaps {
   width: 90%;
   height: auto;
-  display: grid;
+  /* display: grid; */
   grid-area: "googlemaps";
   align-content: center;
 }
 
-section .continentes {
+.continentes {
   width: 90%;
   height: auto;
-  display: grid;
   grid-area: "continentes";
+  /*   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-template-areas: 
-    "botones video-cont";
+    "botones video-cont"; */
   align-content: center;
 }
 
-div .botones {
-  grid-area: "botones";
+.botones-cont {
+  grid-area: "botones-cont";
   align-content: center;
 }
 
-div .video-cont {
+.video-cont {
   grid-area: "video-cont";
   align-content: center;
 }
 
 section .preguntas {
-  width: 80%;
+  width: 100%;
   height: auto;
-  display: grid;
+  /* display: grid; */
   grid-area: "preguntas";
   align-content: center;
 }
