@@ -96,7 +96,7 @@ body {
     "nav section aside"
     "footer footer footer";
   /* background-image: url('img/body.jpg'); */
-  background-color: var(--color-27claro);
+  background-color: var(--color-30claro);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
 }
@@ -204,7 +204,7 @@ aside {
   text-align: center;
   width: auto;
   height: auto;
-  background-color: var(--color-30claro);
+  background-color: var(--color-27claro);
   padding: auto;
   /* margin: 8%;
   margin-bottom: 8%; */
