@@ -54,6 +54,7 @@ Importacion de Font Localmente
   --color-29: #75160f;
   --color-30: #e7857a;
   --color-31: #eb7067;
+  --color-32: #cad2cd;
 
 }
 
@@ -93,7 +94,7 @@ body {
     "nav section aside"
     "footer footer footer";
   /* background-image: url('img/body.jpg'); */
-  background-color: var(--color-principal);
+  background-color: var(--color-32);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
 }
