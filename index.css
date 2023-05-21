@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 /* Creamos Variable de colores para nuetro css */
 
+/*
+Importacion de Font Localmente
+*/
+@font-face {
+  font-family: waltograph;
+  src: url('font/waltograph/waltograph42.otf') format('opentype'),
+       url('font/waltograph/waltographUI.ttf') format('truetype');
+}
+
+
+
 :root {
   --color-1: #790d31;
   --color-1-0: #d61354;
@@ -81,7 +92,8 @@ body {
     "nav section aside"
     "footer footer footer";
   background-image: url('img/body.jpg');
-  font-family: 'Schoolbell', cursive;
+  /*font-family: 'Schoolbell', cursive; */
+  font-family: 'waltograph';
   background-size: cover;
 }
 
