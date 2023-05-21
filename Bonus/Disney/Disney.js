@@ -1,55 +1,43 @@
+/*
+{
+  filterCharacter: 'https://api.disneyapi.dev/character?queryParams',
+  getAllCharacters: 'https://api.disneyapi.dev/character',
+  getOneCharacter: 'https://api.disneyapi.dev/character/:id'
+}
+*/
+
+
 
 /// Busqueda Aleatoria
-function Disney() {
+function Aleatorio() {
     // Limpiar el contenido actual
-    contenido.innerHTML = '';
+    datos.innerHTML = '';
+    foto.innerHTML = '';
 
-    fetch('https://api.disneyapi.dev/character')
+    let id = Math.floor(Math.random() * 7450);
+    let url = 'https://api.disneyapi.dev/character/' + id;
+
+    fetch(url)
         .then(response => response.json())
         .then(data => {
-            let personaje = Math.floor(Math.random() * data.data.length);
             console.log(data);
-            contenido.innerHTML += `
-            <div>
-            <table>
-            <caption> </caption>
-                <thead></thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="5"><img src="${data.data[personaje].imageUrl}"></th>
-                        <td><b>Nombre:</b> ${data.data[personaje].name}</td>
-                    </tr>
-                    <tr>
-                        <th>ID: ${data.data[personaje]._id}</th>
-                    </tr>
-                    <tr>
-                        <th>Fecha de Creacion: ${data.data[personaje].createdAt}</th>
-                    </tr>
-                    <tr>
-                        <th>Ultima Actualizacion: ${data.data[personaje].updatedAt}</th>
-                    </tr>
-                    <tr>
-                        <th> <a href="${data.data[personaje].sourceUrl}" target="_blank">Enlace de origen</a></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                    </tr>
-                </tbody>
-                <footer></footer>
-            </table>
-        </div>
-            `;
+            datos.innerHTML += `
+          <div>
+            <div><b>Nombre:</b> ${data.data.name}</div><br><br>
+            <div>Películas: ${data.data.films}</div><br><br>
+            <div>Cortometrajes: ${data.data.shortFilms}</div><br><br>
+            <div>Programas de televisión: ${data.data.tvShows}</div><br><br>
+            <div>Videojuegos: ${data.data.videoGames}</div><br><br>
+            <div><a href="${data.data.sourceUrl}" target="_blank">Mas Detalles..</a></div>
+          </div>
+        `;
+            foto.innerHTML += `
+          <div>
+            <img src="${data.data.imageUrl}" alt="Logo" width="200px">
+          </div>
+        `;
+        })
+        .catch(error => {
+            console.error('Error al obtener los datos:', error);
         });
 }
-
-
-/* 
-            <div>
-            <img src="${data.data[personaje].imageUrl}"><br><br>
-            <p><b>Nombre:</b> ${data.data[personaje].name}<br><br></p>
-            <p><b>ID del Personaje:</b> ${data.data[personaje]._id}<br><br></p>
-            <p><b>Fecha de creación:</b> ${data.data[personaje].createdAt}<br><br></p>
-            <p><b>Última actualización:</b> ${data.data[personaje].updatedAt}<br><br></p>
-            <p><a href="${data.data[personaje].sourceUrl}" target="_blank">Enlace de origen</a></p>
-            </div>
-*/

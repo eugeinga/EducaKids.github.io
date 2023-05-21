@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Disney.css">
-        <!-- Aqui inicia las llamadas de fontawesome -->
-        <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
-        <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
-        <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
-        <link rel="icon" href="img/icono.png">
-        <!-- Aqui finaliza las llamadas de font awesome -->
-    <style ></style>
+    <!-- Aqui inicia las llamadas de fontawesome -->
+    <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="../../img/icono.png">
+    <!-- Aqui finaliza las llamadas de font awesome -->
     <title>EducaKids - API Disney</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -37,12 +38,63 @@
         <div class="header-botones">
             <p><a href="../../" title="Regresar"><i class="fa-solid fa-bars fa-bounce fa-2xl"></i></a></p>
         </div><br>
-    <button onclick="Disney()">Buscar</button></nav>
+        <button onclick="Aleatorio()">Siguiente</button>
+
+    </nav>
     <section>
-        <p>Busca Aleatoriamente tu personaje Favorito de Disney</p>
-        <div id="contenido" class="contenido">
-        </div>
+        <p>Presione el Boton Siguiente para Generar un Personaje y conocer Detalles del mismo, <br>
+            Existen mas de 7400 Personajes... Diviertete!</p><br>
+        <div id="foto" class="foto"></div>
+        <div id="datos" class="datos"></div>
+        <br>
+        <br>
     </section>
+    <aside>
+        <br>
+        <h2> Aprender </h2>
+        <br>
+        <!-- <p>Aprender Matematicas</p> -->
+        <a href="../../Aprender/matematicas/" title="Matematicas"><img src="../../img/aside/matematicas.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Geografia</p> -->
+        <a href="../../Aprender/geografia/" title="geografia"><img src="../../img/aside/geografia.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Lengua</p> -->
+        <a href="../../Aprender/lengua/" title="Lengua"><img src="../../img/aside/lenguaje.png"></a>
+        <br>
+        <hr>
+        <h2>Bonus</h2>
+        <br>
+        <!-- <p>Realiza tus Calculos Para tus Fiestas</p> -->
+        <a href="../../Bonus/fiesta/" title="Presupuesto para Fiestas"><img src="../../img/bonus/fiesta.png"></a>
+        <br>
+        <br>
+        <!-- <p>Juega con la Calculadora Loca</p> -->
+        <a href="../../Bonus/calculadora/" title="Calculadora Loca"><img src="../../img/bonus/calculadora.png"></a>
+        <br>
+        <br>
+        <!-- <p>Descubre los Diferentes Juegos y Divertidos Para ti</p> -->
+        <a href="../../Bonus/juegos/" title="Juego"><img src="../../img/bonus/juegos.png"></a>
+        <br>
+        <br>
+        <!-- <p> Te gustan los Cuentos ?</p> -->
+        <a href="../../Bonus/cuentos/" title="Cuentos"><img src="../../img/bonus/cuentos.png"></a>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h2>Scratch</h2>
+        <br>
+        <p>Crea tus propios videojuegos</p>
+        <br>
+        <a href="https://scratch.mit.edu/" target="_blank">
+            <img src="../../img/aside/scratch.png" title="Scratch">
+        </a>
+        <br>
+        <br>
+    </aside>
     <footer>
         <div class="div-boton1">
             <p>
@@ -51,16 +103,15 @@
             </p>
         </div>
         <div class="div-boton2">
-            <a href="Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl "
+            <a href="../../Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl "
                     style="color: #ff8b06;"></i></a>
         </div>
         <div class="div-boton3">
-            <a href="Bonus/juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl"
+            <a href="../juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl"
                     style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->
         </div>
     </footer>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://unpkg.com/vue@3"></script>
     <script src="Disney.js"></script>
 </body>
+
 </html>
