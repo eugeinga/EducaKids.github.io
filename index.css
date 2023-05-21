@@ -50,11 +50,13 @@ Importacion de Font Localmente
 
   /* Paleta de colores según la imagen del header */
   --color-27: #acd4be;
+  --color-27claro: #c6f4db;
   --color-28: #50afa5;
   --color-29: #75160f;
   --color-30: #e7857a;
+  --color-30claro: #f7aca3;
   --color-31: #eb7067;
-  --color-32: #cad2cd;
+  
 
 }
 
@@ -94,7 +96,7 @@ body {
     "nav section aside"
     "footer footer footer";
   /* background-image: url('img/body.jpg'); */
-  background-color: var(--color-32);
+  background-color: var(--color-27claro);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
 }
@@ -202,7 +204,7 @@ aside {
   text-align: center;
   width: auto;
   height: auto;
-  background-color: var(--color-30);
+  background-color: var(--color-30claro);
   padding: auto;
   /* margin: 8%;
   margin-bottom: 8%; */
