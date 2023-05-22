@@ -145,12 +145,12 @@ section {
   /* grid-template-columns: 50% 50%; */
   /* grid-template-rows: repeat(6, auto); */
   grid-template-areas:
-    "intro-geo intro-geo"
-    "widget-1 widget-2"
-    "googlemaps googlemaps"
-    "botones-cont botones-cont"
-    "video-cont video-cont"
-    "preguntas preguntas";
+    "intro-geo"
+    "widgets"
+    "googlemaps"
+    "botones-cont"
+    "video-cont"
+    "preguntas";
   background-color: blueviolet;
   padding: 10px;
   grid-gap: 10px;
@@ -171,7 +171,7 @@ section {
     "mapa-1 mapa-2"; */
 }
 
-.widget-1 {
+.widgets {
   /* width: 90%; */
   grid-area: "widget-1";
   /* align-content: center; */
