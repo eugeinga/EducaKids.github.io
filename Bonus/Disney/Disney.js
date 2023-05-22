@@ -24,11 +24,11 @@ function Aleatorio() {
             datos.innerHTML += `
           <div>
             <div><b>Nombre:</b> ${data.data.name}</div><br><br>
-            <div>Películas: ${data.data.films}</div><br><br>
-            <div>Cortometrajes: ${data.data.shortFilms}</div><br><br>
-            <div>Programas de televisión: ${data.data.tvShows}</div><br><br>
-            <div>Videojuegos: ${data.data.videoGames}</div><br><br>
-            <div><a href="${data.data.sourceUrl}" target="_blank">Mas Detalles..</a></div>
+            <div><b>Películas:</b> ${data.data.films}</div><br><br>
+            <div><b>Cortometrajes:</b> ${data.data.shortFilms}</div><br><br>
+            <div>Programas de televisión:</b> ${data.data.tvShows}</div><br><br>
+            <div><b>Videojuegos:</b> ${data.data.videoGames}</div><br><br>
+            <div>Para Mas Detalles del Personaje Visite <a href="${data.data.sourceUrl}" target="_blank">AQui</a> </div>
           </div>
         `;
             foto.innerHTML += `
