@@ -173,7 +173,7 @@ section {
 
 .widgets {
   /* width: 90%; */
-  grid-area: "widget-1";
+  grid-area: "widgets";
   align-content: center;
 }
 
