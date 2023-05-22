@@ -82,7 +82,8 @@ body {
     "header"
     "section"
     "footer";
-  background-image: url('img/body.jpg');
+  /* background-image: url('img/body.jpg'); */
+  background-color: var(--color-base);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
   gap: 5%;
