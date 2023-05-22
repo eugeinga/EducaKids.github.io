@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 /* Creamos Variable de colores para nuetro css */
 
+/*
+Importacion de Font Localmente
+*/
+@font-face {
+  font-family: waltograph;
+  src: url('../font/waltograph/waltograph42.otf') format('opentype'),
+       url('../font/waltograph/waltographUI.ttf') format('truetype');
+}
+
+
+
 :root {
   --color-1: #790d31;
   --color-1-0: #d61354;
@@ -35,8 +46,19 @@
   --color-25: #0000FF;
   --color-26: #E6E6FA;
   --color-principal: #abddc4;
+  /* --color-principal: #acd4be */
+
+  /* Paleta de colores según la imagen del header */
+  --color-base: #fcfcec;
+  --color-27: #acdcc4;
+  --color-27claro: #bae4cf;
+  --color-28: #50afa5;
+  --color-29: #75160f;
+  --color-30: #e7857a;
   --color-30claro: #ea9c94;
   --color-31: #eb7067;
+  
+
 }
 
 /*
@@ -61,19 +83,23 @@ h6 {
   text-align: center;
   margin-bottom: 5%;
   margin-top: 5%;
+  font-family: 'waltograph';
+  font-size: 2em;
+  font-weight:bold;
 }
 
 /* configuramos el Body Para que trabaje con grid */
 
 body {
   display: grid;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 10% 70% 20%;
   grid-template-rows: 10% auto 5%;
   grid-template-areas:
     "header header header"
     "nav section aside"
     "footer footer footer";
-  background-image: url('img/body.jpg');
+  /* background-image: url('img/body.jpg'); */
+  background-color: var(--color-base);
   font-family: 'Schoolbell', cursive;
   background-size: cover;
 }
@@ -129,11 +155,12 @@ nav {
   bottom: 80px;
   left: -450px;
   width: 10%;
-  height: 25%;
+  height: 30%;
   transition: all 0.9s ease;
   border-radius: 8%;
   z-index: 5;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: var(--color-principal); */
   background-color: var(--color-principal);
   background-image: url('img/nav.png');
   background-size: contain;
@@ -163,14 +190,33 @@ nav li:hover {
 section {
   grid-area: section;
   font-size: larger;
+  margin: 6%;
 }
 
 section iframe {
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 400px;
 }
+/* 
+.contenedor-video{
+  position:relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 75%;
+}
+
+.video{
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 /* ASIDE style
 ===========================================*/
@@ -180,10 +226,10 @@ aside {
   text-align: center;
   width: auto;
   height: auto;
-  background-color: #abddc4;
+  background-color: var(--color-30claro);
   padding: auto;
-  margin: 8%;
-  margin-bottom: 8%;
+  /* margin: 8%;
+  margin-bottom: 8%; */
 }
 
 aside a.no-underline {
@@ -235,11 +281,11 @@ aside p:hover {
 footer {
   grid-area: footer;
   /* background-image: url('img/footer.jpg'); */
-  background-color: #abddc4;
+  background-color:var(--color-27);
   color: white;
   box-shadow: auto rgba(0, 0, 0, 0.3);
   border: auto solid #7a7777;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -247,7 +293,7 @@ footer {
     "div-boton1 div-boton2 div-boton3";
   padding: auto;
   margin: auto;
-  margin-top: 8%;
+  /* margin-top: 8%; */
   width: 100%;
   height: 100%;
 }
@@ -396,13 +442,4 @@ Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400 x 900 o 1600 x 1
     height: 35%;
     font-size:medium;
   }
-}
-
-section img {
-  width: 20%;
-  height: 15%;
-  text-align: center;
-  align-items:normal;
-  display: block;
-  margin: 0 auto;
 }

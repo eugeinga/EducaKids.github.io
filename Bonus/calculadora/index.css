@@ -305,7 +305,7 @@ aside {
   text-align: center;
   width: auto;
   height: 100%;
-  background-color: #abddc4 ;
+  background-color: var(--color-30claro);
   padding: auto;
   margin: 8%;
   margin-bottom: 8%;
