@@ -161,7 +161,7 @@ section {
   grid-area: "intro-geo";
   /* width: 100%; */
   /* text-align: justify; */
-  /* align-content: center;
+  align-items: center;
   /* height: auto; */
   /* display: grid;
   grid-template-columns: 50% 50%;
@@ -174,13 +174,13 @@ section {
 .widgets {
   /* width: 90%; */
   grid-area: "widgets";
-  align-content: center;
+  align-items: center;
 }
 
 .widget-2 {
   /* width: 90%; */
   grid-area: "widget-2";
-  align-content: center;
+  align-items: center;
 }
 
 .googlemaps {
@@ -188,17 +188,17 @@ section {
   /* height: auto; */
   /* display: grid; */
   grid-area: "googlemaps";
-  align-content: center;
+  align-items: center;
 }
 
 .botones-cont {
   grid-area: "botones-cont";
-  align-content: center;
+  align-items: center;
 }
 
 .video-cont {
   grid-area: "video-cont";
-  align-content: center;
+  align-items: center;
 }
 
 .banderas {
@@ -206,7 +206,13 @@ section {
   /* height: auto; */
   /* display: grid; */
   grid-area: "banderas";
-  align-content: center;
+  align-items: center;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 section button {
