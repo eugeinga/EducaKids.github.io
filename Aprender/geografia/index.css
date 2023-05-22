@@ -140,20 +140,21 @@ section {
   text-align: justify;
 }
 
-.contenedor{
+.contenedor {
   display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-      "intro-geo intro-geo"
-      "widget-1 widget-2"
-      "googlemaps googlemaps"
-      "botones-cont botones-cont"
-      "video-cont video-cont"
-      "preguntas preguntas";
-    background-color: blueviolet;
-    padding: 20px;
-    /* margin: 3%; */
+  /* grid-template-columns: 50% 50%; */
+  /* grid-template-rows: repeat(6, auto); */
+  grid-template-areas:
+    "intro-geo intro-geo"
+    "widget-1 widget-2"
+    "googlemaps googlemaps"
+    "botones-cont botones-cont"
+    "video-cont video-cont"
+    "preguntas preguntas";
+  background-color: blueviolet;
+  padding: 10px;
+  grid-gap: 10px;
+  /* margin: 3%; */
 }
 
 .intro-geo {
