@@ -1,3 +1,8 @@
+:root {
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
+}
+
 body {
   display: grid;
   grid-template-columns: 20% auto;

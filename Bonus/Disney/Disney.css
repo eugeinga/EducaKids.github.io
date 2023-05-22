@@ -36,6 +36,8 @@
   --color-25: #0000FF;
   --color-26: #E6E6FA;
   --color-principal: #abddc4;
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
 }
 
 /*
@@ -125,9 +127,6 @@ nav {
   grid-area: nav;
 }
 
-nav boton{
-
-}
 
 /* SECTION style
 ===========================================*/
@@ -175,7 +174,7 @@ aside {
   text-align: center;
   width: auto;
   height: auto;
-  background-color: #abddc4;
+  background-color: var(--color-30claro);
   padding: auto;
   margin: 8%;
   margin-bottom: 8%;

@@ -35,6 +35,8 @@
     --color-25: #0000FF;
     --color-26: #E6E6FA;
     --color-principal: #abddc4;
+    --color-30claro: #ea9c94;
+    --color-31: #eb7067;
 }
 
 /*
@@ -303,7 +305,7 @@ aside {
   text-align: center;
   width: auto;
   height: 100%;
-  background-color: #abddc4 ;
+  background-color: var(--color-30claro);
   padding: auto;
   margin: 8%;
   margin-bottom: 8%;

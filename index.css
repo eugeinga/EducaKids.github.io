@@ -190,6 +190,7 @@ nav li:hover {
 section {
   grid-area: section;
   font-size: larger;
+  margin: 6%;
 }
 
 section iframe {
