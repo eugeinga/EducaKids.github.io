@@ -1,6 +1,6 @@
 /* importacio de Fonts de Google */
-@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 /* Creamos Variable de colores para nuetro css */
 
 html,
@@ -10,39 +10,37 @@ body {
   padding: 0;
 }
 
-
-
 :root {
   --color-1: #790d31;
   --color-1-0: #d61354;
   /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
-  --color-2: #DD6E42;
-  --color-3: #F94A29;
-  --color-2-0: #DD6E4295;
-  --color-3-0: #F94A2995;
-  --color-4: #FCE22A;
-  --color-5: #BEE7E8;
-  --color-6: #30E3DF;
+  --color-2: #dd6e42;
+  --color-3: #f94a29;
+  --color-2-0: #dd6e4295;
+  --color-3-0: #f94a2995;
+  --color-4: #fce22a;
+  --color-5: #bee7e8;
+  --color-6: #30e3df;
   --color-7: #000000;
-  --color-8: #A9A9A9;
-  --color-9: #D2B48C;
-  --color-10: #C0C0C0;
-  --color-11: #FFD700;
-  --color-12: #D3D3D3;
-  --color-13: #FFFFFF;
-  --color-14: #87CEEB;
-  --color-15: #00CED1;
-  --color-16: #00FF7F;
-  --color-17: #7FFF00;
-  --color-18: #FFE5B4;
-  --color-19: #FF69B4;
+  --color-8: #a9a9a9;
+  --color-9: #d2b48c;
+  --color-10: #c0c0c0;
+  --color-11: #ffd700;
+  --color-12: #d3d3d3;
+  --color-13: #ffffff;
+  --color-14: #87ceeb;
+  --color-15: #00ced1;
+  --color-16: #00ff7f;
+  --color-17: #7fff00;
+  --color-18: #ffe5b4;
+  --color-19: #ff69b4;
   --color-20: #800080;
-  --color-21: #FFA500;
-  --color-22: #FF0000;
-  --color-23: #FFFF00;
-  --color-24: #00FF00;
-  --color-25: #0000FF;
-  --color-26: #E6E6FA;
+  --color-21: #ffa500;
+  --color-22: #ff0000;
+  --color-23: #ffff00;
+  --color-24: #00ff00;
+  --color-25: #0000ff;
+  --color-26: #e6e6fa;
   --color-principal: #abddc4;
   --color-30claro: #ea9c94;
   --color-31: #eb7067;
@@ -76,14 +74,14 @@ h6 {
 
 body {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 65% 10%;
   grid-template-areas:
     "header"
     "section"
     "footer";
-  background-image: url('img/body.jpg');
-  font-family: 'Schoolbell', cursive;
+  /*background-image: url("img/body.jpg");*/
+  font-family: "Schoolbell", cursive;
   background-size: cover;
   gap: 5%;
 }
@@ -93,7 +91,7 @@ body {
 
 header {
   grid-area: header;
-  background-image: url('img/header.jpg');
+  background-image: url("img/header.jpg");
   /* box-shadow: auto rgba(0, 0, 0, 0.3); */
   /* border: auto solid #7a7777; */
   /* border-radius: 3%; */
@@ -126,18 +124,21 @@ header .logo {
 .logo img {
   width: 100%;
   height: auto;
-  max-width: 30%
+  max-width: 30%;
 }
-
 
 /* SECTION style
 ===========================================*/
 
 section {
   grid-area: section;
-  width: 100%;
-  align-content: center;
-  text-align: justify;
+  background-color:rgba(0, 128, 128, 0.308);
+  padding: 2%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-color: #a9a9a9;
 }
 
 
@@ -155,8 +156,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "div-boton1 div-boton2 div-boton3";
+  grid-template-areas: "div-boton1 div-boton2 div-boton3";
   padding: auto;
   margin: auto;
   margin-top: 3%;
@@ -181,7 +181,6 @@ footer .div-boton3 {
   padding: auto;
   margin: auto;
 }
-
 
 /* MEDIDAS
 ===========================================
@@ -223,7 +222,6 @@ HTC One: 360 x 640 */
   }
 }
 
-
 /* Pantallas pequeñas (usadas por ejemplo en netbooks): 1024 x 600 */
 @media screen and (max-width: 1024px) {
   nav {
@@ -242,7 +240,6 @@ HTC One: 360 x 640 */
 /* Pantallas medianas: 1280 x 720 / 1280 x 800 */
 
 @media screen and (max-width: 1280px) {
-
   nav {
     width: 15%;
     height: 30%;
@@ -274,7 +271,6 @@ HTC One: 360 x 640 */
     font-size: medium;
   }
 }
-
 
 /*
 Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400 x 900 o 1600 x 1200.
