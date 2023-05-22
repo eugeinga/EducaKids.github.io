@@ -95,7 +95,7 @@ function cinco() {
 ///
 
 function seis() {
-  fetch('videos/seistxt')
+  fetch('videos/seis.txt')
       .then(data => data.text())
       .then(data => {
           video.innerHTML = `${data}`
@@ -173,3 +173,59 @@ function diez() {
 }
 
 ///
+
+
+function Suma(num1, num2) {
+    var resultado = num1 + num2;
+  
+    var pregunta = document.getElementById("pregunta");
+    pregunta.textContent = "¿Cuál es la suma de " + num1 + " y " + num2 + "?";
+  
+    var respuestaUsuario = parseInt(document.getElementById("respuesta").value);
+  
+    if (respuestaUsuario === resultado) {
+      alert("¡Respuesta correcta!");
+    } else {
+      alert("Respuesta incorrecta. La respuesta correcta es " + resultado + ".");
+    }
+  }
+  
+  function Resta(num1, num2) {
+    var resultado = num1 + num2;
+  
+    var pregunta = document.getElementById("pregunta");
+    pregunta.textContent = "¿Cuanto es " + num1 + " Menos " + num2 + "?";
+  
+    var respuestaUsuario = parseInt(document.getElementById("respuesta").value);
+  
+    if (respuestaUsuario === resultado) {
+      alert("¡Respuesta correcta!");
+    } else {
+      alert("Respuesta incorrecta. La respuesta correcta es " + resultado + ".");
+    }
+  }
+
+  /// Preguntas infinitas 
+
+
+  // Generar dos números aleatorios entre 1 y 10
+var num1 = Math.floor(Math.random() * 10) + 1;
+var num2 = Math.floor(Math.random() * 10) + 1;
+
+// Calcular la suma de los dos números
+var resultado = num1 + num2;
+
+// Mostrar la pregunta en el DOM
+var pregunta = document.getElementById("pregunta");
+pregunta.textContent = "¿Cuál es la suma de " + num1 + " y " + num2 + "?";
+
+// Verificar la respuesta del usuario
+function verificarRespuesta() {
+  var respuestaUsuario = parseInt(document.getElementById("respuesta").value);
+
+  if (respuestaUsuario === resultado) {
+    alert("¡Respuesta correcta!");
+  } else {
+    alert("Respuesta incorrecta. La respuesta correcta es " + resultado + ".");
+  }
+}
