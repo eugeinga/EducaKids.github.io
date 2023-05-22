@@ -173,13 +173,13 @@ section {
 
 .widget-1 {
   /* width: 90%; */
-  grid-area: widget-1;
+  grid-area: "widget-1";
   align-content: center;
 }
 
 .widget-2 {
   /* width: 90%; */
-  grid-area: widget-2;
+  grid-area: "widget-2";
   align-content: center;
 }
 
