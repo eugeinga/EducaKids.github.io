@@ -150,7 +150,7 @@ section {
     "googlemaps"
     "botones-cont"
     "video-cont"
-    "preguntas";
+    "banderas";
   background-color: blueviolet;
   padding: 10px;
   grid-gap: 10px;
@@ -201,11 +201,11 @@ section {
   align-content: center;
 }
 
-.preguntas {
+.banderas {
   /* width: 90%; */
   /* height: auto; */
   /* display: grid; */
-  grid-area: "preguntas";
+  grid-area: "banderas";
   align-content: center;
 }
 
