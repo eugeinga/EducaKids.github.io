@@ -270,3 +270,75 @@ function geografia() {
     });
     app.mount('#app');
 }
+function ingles() {
+    const app = createApp({
+        setup() {
+            const state = reactive({
+                preguntas: [
+                    { pregunta: '¿Cómo se escribe 1 en Inglés?', respuesta: 'one', opciones: ['on', 'one', 'uan', 'guan'] },
+                    { pregunta: '¿Cómo se escribe 15 en Inglés?', respuesta: 'fifteen', opciones: ['fiveteen', 'fiveten', 'fifteen', 'fiften'] },
+                    { pregunta: '¿Cómo se escribe 55 en Inglés?', respuesta: 'fifty-five', opciones: ['fivety-five', 'faity-five', 'fifty-five', 'fifty-fai'] },
+                    { pregunta: '¿Cómo se escribe 100 en Inglés?', respuesta: 'one hundred', opciones: ['one hundred', 'on hundred', 'uan hundred', 'guan hundred'] },
+                    { pregunta: '¿Cómo se escribe Lápiz en Inglés?', respuesta: 'pencil', opciones: ['pen', 'penzil', 'pensel', 'pencil'] },
+                    { pregunta: '¿Cómo se escribe Pegamento en Inglés?', respuesta: 'glue', opciones: ['wlue', 'glu', 'glue', 'flue'] },
+                    { pregunta: '¿Cómo se escribe Regla en Inglés?', respuesta: 'ruler', opciones: ['ruler', 'ruller', 'uler', 'rruler'] },
+                    { pregunta: '¿Cómo se escribe Libro en Inglés?', respuesta: 'book', opciones: ['vook', 'buuk', 'book', 'buck'] },
+                    { pregunta: '¿Cómo se escribe Rojo en Inglés?', respuesta: 'red', opciones: ['black', 'white', 'pink', 'red'] },
+                    { pregunta: '¿Cómo se escribe Naranja en Inglés?', respuesta: 'orange', opciones: ['red', 'orange', 'blue', 'purple'] },
+                    { pregunta: '¿Cómo se escribe Verde en Inglés?', respuesta: 'green', opciones: ['red', 'orenge', 'yellow','green']},
+                    { pregunta: '¿Cómo se escribe Marrón en Inglés?', respuesta: 'brown', opciones: ['pink', 'black', 'brown', 'red'] },
+                    // Agrega más preguntas aquí...
+                ],
+                preguntaActual: 0,
+                respuesta: '',
+                puntos: 0
+            });
+
+            function verificarRespuesta(opcion) {
+                const pregunta = state.preguntas[state.preguntaActual];
+                if (opcion === pregunta.respuesta) {
+                    state.puntos++;
+                    document.querySelector('.mensaje').textContent = '¡Respuesta correcta!';
+                } else {
+                    document.querySelector('.mensaje').textContent = 'Respuesta incorrecta. Intenta de nuevo.';
+                }
+                document.querySelector('.puntuacion').textContent = 'Puntuación: ' + state.puntos;
+                siguientePregunta();
+                // Guardar puntos en el almacenamiento local
+                localStorage.setItem('puntosGeografia', state.puntos);
+            }
+
+            function siguientePregunta() {
+                state.preguntaActual++;
+                if (state.preguntaActual >= state.preguntas.length) {
+                    document.querySelector('.mensaje').textContent = 'Has completado todas las preguntas.';
+                } else {
+                    state.respuesta = '';
+                    document.querySelector('.mensaje').textContent = '';
+                }
+            }
+
+            return {
+                state,
+                verificarRespuesta,
+                siguientePregunta
+            };
+        },
+        template: `
+            <div>
+                <h1>Preguntas de Inglés</h1>
+                <p>{{ state.preguntas[state.preguntaActual].pregunta }}</p>
+                <div>
+                    <button
+                        v-for="opcion in state.preguntas[state.preguntaActual].opciones"
+                        :key="opcion"
+                        @click="verificarRespuesta(opcion)"
+                    >
+                        {{ opcion }}
+                    </button>
+                </div>
+            </div>
+        `
+    });
+    app.mount('#app');
+}
