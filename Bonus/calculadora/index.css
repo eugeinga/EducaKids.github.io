@@ -127,8 +127,8 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%;
-  font-size: 70%;
-  padding: 5%;
+  font-size: 100%;
+  padding: 2%;
   text-align: left;
 }
 
@@ -145,6 +145,10 @@ nav li:hover{
   font-size:x-large;
 }
 /* Aqui comenzamos a configurar la Section */
+
+nav {
+  width: max-content;
+}
 
 section {
   grid-area: section;
