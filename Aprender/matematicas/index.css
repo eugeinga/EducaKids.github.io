@@ -84,7 +84,8 @@ body {
   font-family: "Schoolbell", cursive;
   background-size: cover;
   gap: 5%;
-  background-image: url(img/matematica.jpg);
+  /*background-image: url(img/matematica.jpg);*/
+  background-color: #e5e76bb9;
 }
 
 /* HEADER style
@@ -145,7 +146,6 @@ section {
   "CuadroMenu"
   "CuadroContenido"
   "CuadroTexto";
-  background-color: rgb(221, 255, 28);
   border-radius: 5px;
 }
 
@@ -227,3 +227,46 @@ footer .div-boton3 {
 /* MEDIDAS
 ===========================================
 */
+
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}

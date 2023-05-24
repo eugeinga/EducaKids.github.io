@@ -55,13 +55,14 @@ Plantenado definiciones
 * {
   padding: 0%;
   margin: 0%;
+  font-size: 110%;
 }
 
 a {
   text-decoration: none;
 }
 
-h1{
+section h1{
   padding-top: 50px;
   text-decoration: underline;
   text-align: center;
@@ -86,9 +87,6 @@ body {
   "header header header"
   "nav section aside"
   "footer footer footer";
-  background-image: url('img/body.jpg');
-  font-family: 'Schoolbell', cursive;
-  background-size: cover;
   gap: 5%;
 }
 
@@ -143,12 +141,19 @@ section {
   height: auto;
   align-content: center;
   text-align: justify;
-  padding: 20px;
+
 }
-iframe{
-    padding: 20px;
- 
+section .contenido {
+  padding: 5%;
+  text-align: center;
+  font-family: 'Schoolbell', cursive;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin: 5%;
+  border-color: #00000059;
+
 }
+
 
 /* FOOTER style
 ===========================================*/
@@ -195,3 +200,48 @@ footer .div-boton3 {
 /* MEDIDAS
 ===========================================
 */
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 30%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}

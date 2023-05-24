@@ -81,3 +81,21 @@ body{
   .colorido {
     background-color: #ffffff;
   }
+
+  /* Medidas */
+
+/*
+400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+
+  .recibo caption {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 50%;
+  }
+
+}

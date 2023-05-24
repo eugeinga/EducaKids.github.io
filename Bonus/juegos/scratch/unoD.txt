@@ -1,10 +1,12 @@
-<h1>Como Jugar ..</h1>
+<span> 
+Como Jugar 
 <br><br>
-<h2>Es un Juego de memoria donde debes encontrar Dos Figuras iguales , una tras otra, Ganaras al completar todos los pares.<br>
+Es un Juego de memoria donde debes encontrar Dos Figuras iguales , una tras otra, Ganaras al completar todos los pares.<br>
 <br>
-Se puede reutilizar para otros juegos educativos o de diversión... <br>Solo debes modificar las tarjetas 1 y 2, 3 y 4 etc hasta la 17 y 18.<br> Luego un algoritmo las ordena en forma aleatoria para que el juego siempre sea distinto.
-</h2>
-<span>
+Se puede reutilizar para otros juegos educativos o de diversión... <br>Solo debes modificar las tarjetas 1 y 2, 3 y 4 etc hasta la 17 y 18.
+<br> Luego un algoritmo las ordena en forma aleatoria para que el juego siempre sea distinto.
+
+
 Juego de memoria creado a para mis hijos fanáticos de Bajoterra y a veces un poco aburridos en vacaciones
 @LabTeD_benitezm
 
@@ -13,5 +15,3 @@ https://scratch.mit.edu/projects/96180008/
 Quieres probar el juego de duelos de Bajoterra?
 https://scratch.mit.edu/projects/111617387/
 </span>
-
-<p>Scratch es un motor de videojuegos desarrollado por MIT Media Lab.​ Su principal característica consiste en que permite el desarrollo de habilidades mentales mediante el aprendizaje de la programación sin tener conocimientos profundos sobre el código.</p>
