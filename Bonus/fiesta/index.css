@@ -388,3 +388,44 @@ Extra small devices (phones,
     font-size: 70%;
   }
 }
+
+/* 650 */
+
+@media only screen and (max-width: 650px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 90%;
+    height: 40%;
+  }
+
+  input{
+    width: 10%;
+    height: auto;
+    font-size: 100%;
+  }
+
+  table {
+    font-size: 70%;
+  }
+}

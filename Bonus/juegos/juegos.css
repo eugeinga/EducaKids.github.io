@@ -133,3 +133,29 @@ Extra small devices (phones,
     font-size: 50%;
   }
 }
+
+
+/* 650 */
+@media only screen and (max-width: 650px) {
+  nav {
+    padding: 1px;
+  }
+
+  nav button {
+    font-size: 6px;
+    margin-bottom: 5px;
+  }
+
+  nav button:hover {
+    font-size: x-small;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px; /* Se ajusta la altura según tus necesidades */
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 50%;
+  }
+}
