@@ -333,3 +333,311 @@ Extra small devices (phones,
   }
 
 }
+
+/* 850 */
+
+@media only screen and (max-width: 850px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 800%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+
+/*768*/
+
+@media only screen and (max-width: 768px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 800%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+
+/*800*/
+
+@media only screen and (max-width: 800px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 800%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+
+/* 992*/
+
+@media only screen and (max-width: 992px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+
+/* 1000 */
+
+
+@media only screen and (max-width: 1000px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+/* 1200*/
+
+@media only screen and (max-width: 1200px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 500%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
+
+/* 1300 */
+
+@media only screen and (max-width: 1300px) {
+  
+  p {
+    font-size: 80%;
+  }
+
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 600%;
+    height: auto;
+  }
+  header .titulo {
+    font-size: 80%;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 120%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  section .contenido button {
+    font-size: 70%;
+  }
+
+}
