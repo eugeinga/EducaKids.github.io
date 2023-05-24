@@ -358,3 +358,33 @@ Extra small devices (phones,
     height: 10%;
   }
 }
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 250%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 200%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 90%;
+    height: 10%;
+  }
+}
