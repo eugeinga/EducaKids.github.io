@@ -47,13 +47,16 @@ Usa git init "En caso de crear un repositorio desde cero . de lo contrario si cl
 
 Git te muestra un estado de tu repositorio
 
-```shell
+```bash
 git status "Este comando te muestra el estado del repositorio te indicara sidetecto algun cambio del seguimiento "
+```
 
+```bash
 git add  "Nombre_del_archivo"
+```
 
+```bash
 git rm "Nombre del archivo con su ruta" "Eliminar un Archivo"
-
 ```
 
 
@@ -66,7 +69,7 @@ git add *
 Para agregar cambios de un archivo o agregar nuevos archivos 
 
 
-```shell
+```bash
 git commit -m 'mensaje'
 ```
 
@@ -76,6 +79,9 @@ Despues de hace un commit de los cambios guardados despues de git add
 
 git push ": Este comando se utiliza para enviar los cambios confirmados a un repositorio remoto. Esto actualiza el repositorio remoto con los cambios que se han hecho en el repositorio local.
 "
+```
+
+```bash
 git pull ": Este comando se utiliza para traer los cambios de un repositorio remoto y fusionarlos con el repositorio local. Esto se utiliza para mantener el repositorio local actualizado con los cambios realizados en el repositorio remoto."
 ```
 
@@ -91,58 +97,78 @@ Una vez que se realice un git pull Te pedira el usuario de tu cuenta github y lu
 
 * Clonar el repositorio en tu Ordenador desde tu consola 
 
-
+```bash
 git clone https://github.com/nombre-de-usuario/nombre-del-repositorio.git
-
+```
 * Ingresa a la Carpeta del Proyecto
-
+```bash
 cd nombre-del-repositorio
+```
 
 * Puedes crear tu Propia Rama ( solo usalo una vez o si necesitas crear mas rama , usa cualquier nombre que deseas , )
 
+```bash
 git checkout -b nombre-de-tu-rama
+```
 
 * Para Subir tus cambio o archivos en tu Rama necesitas realizar 
 
 Una vez que realices algun cambio o creado tus documentos Tienes que agregar tus archivos al seguimiento de git 
 
+```bash
 git add "nombre del archivo"
-
+```
 o 
-
+```bash
 git rm "nombre del archivo si deseas borrar"
+```
 
-
+```bash
 git commit -m "Detalle de lo que realizaste" (esto toma una foto de tu stado estara en espera para luego subirlo al repositorio, si no se realizar el commit entonces nose subira los cambio al repositorio) .
+```
 
 # Antes de Trabajar con algun repositorio
 
 antes de realizar un Push por primera vez en una Rama creada debes usar el comando :
 
+```bash
 git push --set-upstream origin Nombre_de_tu Rama
+```
 
 (Si tienes problemas para realizar este comando verifica una guia , solicita ayuda o verifica primordialmente que te muestra en la consola)
 
 # Comandos Extras para trabar con Ramas
 
-Conceptos :
-
+Los comandos Principales para crear una rama son los siguientes : 
 ```bash
+ git branch 
+  
+  y
 
-nombre-de-rama: "es el nombre de la rama que deseas utilizar o manipular. Por ejemplo, si deseas crear una nueva rama, debes escribir el nombre de la rama que quieres crear después del comando git branch o git checkout -b."
+ git checkout -b.
 ```
 
 ```bash
-nombre-remoto: "es el nombre del repositorio remoto en GitHub. Por defecto, este nombre es origin. Si has creado otros repositorios remotos, debes usar el nombre que les hayas dado."
+nombre-remoto: "es el nombre del repositorio remoto en GitHub. Por defecto, este nombre es origin en algunos caos main . Si has creado otros repositorios remotos, debes usar el nombre que les hayas dado."
 ```
 
+#
+* Ahora bien Para ver primero cuantas ramas estan en el 
 ```bash
 git branch: "muestra una lista de todas las ramas en tu repositorio local."
 ```
 
+con este comando vas a enterarte los nombres de cada rama existente en tu copia Local 
+
+* Para crear una rama nueva se utiliza este comando 
+
 ```bash
 git branch [nombre-de-rama]: "crea una nueva rama con el nombre especificado."
 ```
+
+* Si deseo trabajar en una rama en especifica tengo que decirle a git que oculte la ramas que no deseo trabajar  me muestre la rama en la que Si deseo es decir todas las ramas estaran en mi Git local , No seran eliminadas. El comando Para cambiar de rama a rama es el siguiente .
+
+* Primero se necesita saber como se llama la rama por olvidamos en donde deje mi git uso lo siguiente:
 
 ```bash
 git checkout [nombre-de-rama]: "cambia a la rama especificada."
@@ -150,7 +176,9 @@ git checkout [nombre-de-rama]: "cambia a la rama especificada."
 
 ```bash
 git checkout -b [nombre-de-rama]: "crea una nueva rama con el nombre especificado y cambia a ella."
-
+```
+* Nota:
+```bash 
 -b: Este es un argumento que se utiliza con el comando git checkout para crear una nueva rama y cambiar a ella en un solo comando. Es una forma abreviada de escribir git branch y git checkout en dos comandos separados.
 ```
 
@@ -160,8 +188,14 @@ git merge [nombre-de-rama]: "fusiona la rama especificada con la rama actual."
 
 ```bash
 git push -u [nombre-remoto] [nombre-de-rama]: "empuja la rama especificada al repositorio remoto con el nombre especificado."
+```
 
--u: Este es un argumento que se utiliza con el comando git push para establecer una relación entre la rama local y la rama remota. Al utilizar este argumento, Git recordará el repositorio remoto y la rama a la que está vinculada la rama local, por lo que en el futuro, solo tendrás que escribir git push sin especificar el nombre del repositorio remoto ni la rama de destino.
+```bash
+-u: Este es un argumento que se utiliza con el comando git push para establecer una relación entre la rama local y la rama remota.
+```
+
+```bash
+ Al utilizar este argumento, Git recordará el repositorio remoto y la rama a la que está vinculada la rama local, por lo que en el futuro, solo tendrás que escribir git push sin especificar el nombre del repositorio remoto ni la rama de destino.
 ```
 
 ```bash
@@ -179,9 +213,10 @@ git diff [nombre-de-rama]: "muestra las diferencias entre la rama especificada y
 ```bash
 git branch -d [nombre-de-rama]: "elimina la rama especificada."
 ```
-```bash
-Para cambiar a otra rama, debes utilizar el comando 
 
+* Para cambiar a otra rama, debes utilizar el comando 
+
+```bash
 git checkout [nombre-de-rama]. 
 
 "Por ejemplo, si deseas cambiar a la rama develop, debes escribir "
